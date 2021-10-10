@@ -1,3 +1,10 @@
+'''
+    Author : Cyberkid
+    Language : Python3
+    email : thehappymentorkid@gmail.com
+'''
+
+
 # GET ARRAY SIZE
 n = int(input())
 

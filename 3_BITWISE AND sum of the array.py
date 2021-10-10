@@ -1,3 +1,10 @@
+'''
+    Author : Cyberkid
+    Language : Python3
+    email : thehappymentorkid@gmail.com
+'''
+
+
 tcs = int(input())
 for i in range(tcs):
 	n = int(input())
