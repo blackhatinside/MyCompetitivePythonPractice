@@ -5,20 +5,20 @@
 '''
 
 
-# for _ in range(int(input())):
-# 	n, k = map(int, input().split())
-# 	arr = list(map(int, input().split()))
-# 	cursum = res_ind = 0
-# 	# cursum = sum(x for x in arr[:k])
-# 	for i in range(k):
-# 		cursum += arr[i]
-# 	minsum = cursum
-# 	for i in range(k, n):
-# 		cursum = cursum + arr[i] - arr[i - k]
-# 		if cursum < minsum:
-# 			minsum = cursum
-# 			res_ind = i - k + 1
-# 	print(res_ind, res_ind + k - 1)
+for _ in range(int(input())):
+	n, k = map(int, input().split())
+	arr = list(map(int, input().split()))
+	cursum = res_ind = 0
+	# cursum = sum(x for x in arr[:k])
+	for i in range(k):
+		cursum += arr[i]
+	minsum = cursum
+	for i in range(k, n):
+		cursum = cursum + arr[i] - arr[i - k]
+		if cursum < minsum:
+			minsum = cursum
+			res_ind = i - k + 1
+	print(res_ind, res_ind + k - 1)
 
 
 '''
