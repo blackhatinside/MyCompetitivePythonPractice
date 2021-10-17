@@ -579,7 +579,7 @@ def lcm(a, b):
     else:
         return int(a * b / gcdbig(a, b))
 
-def D_B(x, n):  #decimal to binary
+def decimal_to_binary(x, n):  #decimal to binary
     return bin(x).replace("0b", "").zfill(n)
 
 def toBaseSum(a, b):
@@ -594,6 +594,16 @@ def checkDivisible(a, b):
     if b == 1: return 1;
     elif gcd == 1: return 0;
     else: return checkDivisible(a, b // gcd);
+
+def read_all_nums_from_input_stream():      # https://acm.timus.ru/problem.aspx?space=1&num=1001
+    nums = list()
+    for line in sys.stdin:
+        for word in line.split():
+            nums.append(float(word))
+    return nums
+
+def product_of_list_elements(arr):
+    return reduce((lambda x, y: x * y), arr)
 
 '''
 
