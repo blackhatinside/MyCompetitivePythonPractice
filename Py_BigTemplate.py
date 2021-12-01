@@ -43,6 +43,21 @@ if sys.version_info[0] < 3:
     from __builtin__ import xrange as range
     from future_builtins import ascii, filter, hex, map, oct, zip
 
+class Solution:      
+    def primeRange(self,m,n):
+        if n == 0 or n == 1:
+            return []
+        primes = [1] * (n + 1) # INITIALIZE ALL THE NUMBERS AS PRIMES FROM 0 TO N
+        primes[0] = primes[1] = 0 # ZERO AND ONE ARE NOT PRIMES
+        for i in range(4, n + 1, 2):    # ALL EVEN NUMBERS FROM 4 ARE NOT PRIME
+            primes[i] = 0
+        # print(primes)
+        for i in range(3, n + 1, 2):
+            if primes[i] == 1:
+                for j in range(2 * i, n + 1, i):
+                    primes[j] = 0
+        return [x for x in range(m, n + 1) if primes[x]]
+
 def solve():
     n, m = map(int, input().split())
     ans = 0
