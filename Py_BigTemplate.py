@@ -594,7 +594,7 @@ def lcm(a, b):
     else:
         return int(a * b / gcdbig(a, b))
 
-def findmodpow(a, b, m = 1):    #non recursive -> a pow b mod m
+def findmodpow(a, b, m = 1):    #non recursive [Binary Exponentiation] -> a pow b mod m
     res = 1 
     while b > 0:
         if b & 1:
