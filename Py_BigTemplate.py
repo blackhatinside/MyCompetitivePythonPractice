@@ -594,6 +594,15 @@ def lcm(a, b):
     else:
         return int(a * b / gcdbig(a, b))
 
+def findmodpow(a, b, m = 1):    #non recursive -> a pow b mod m
+    res = 1 
+    while b > 0:
+        if b & 1:
+            res = res * a % m
+        a = a * a % m
+        b >>= 1
+    return res
+
 def decimal_to_binary(x, n):  #decimal to binary
     return bin(x).replace("0b", "").zfill(n)
 
