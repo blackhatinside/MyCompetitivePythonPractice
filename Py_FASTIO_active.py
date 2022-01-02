@@ -44,17 +44,29 @@ import math, functools, collections
 # from collections import defaultdict
 # from collections import Counter
 # hp = defaultdict(lambda: 0)
-# hp = collections.defaultdict(int, collections.Counter(arr))
-# arr = sorted(hp.items(), key = lambda kv:(kv[1], kv[0]))
-# arr = list(filter(lambda a: a[1] != min(hp.values()), arr))
+# hp = collections.defaultdict(int, collections.Counter(lis))
+# lis = sorted(hp.items(), key = lambda kv:(kv[1], kv[0]))
+# lis = sorted(lis, key = lambda ele: (ele[1], ele[0]))
+# lis = list(filter(lambda a: a[1] != min(hp.values()), lis))
+# input = lambda : sys.stdin.readline()
 # input = lambda: sys.stdin.readline().strip()
-# imap = lambda: map(int,input().split())
-# ilist = lambda: list(map(int, input().split()))
+input = sys.stdin.readline
+istr = lambda: input().strip()
+inum = lambda: int(input().strip())
+imap = lambda: map(int,input().strip().split())
+ilist = lambda: list(map(int, input().strip().split()))
 # sys.stdout.write(str(ans) + "\n")
 # for line in sys.stdin
 # except: print(f'Unknown Error: {sys.exc_info()[1]}')
-# w = int(input()); print("YNEOS"[(w > 2 and not w % 2)::2]);
-
+# w = int(input()); print("YNEOS"[(w > 2 and not w % 2)::2])
+# def makegrid(n):
+#     x = []
+#     for i in range(n):
+#         x.append(".")
+#     grid = []
+#     for i in range(n):
+#         grid.append(list(x))
+#     return grid
 # return self.inorderTraversal(root.left) + [root.val] + self.inorderTraversal(root.right) if root else list()
 #--SHORTHANDS ENDS--
 
@@ -167,14 +179,23 @@ def solve():
     # YOUR CODE HERE
     # global modobj
     # print(modobj.value(int(1e15)))  #setting modobj._modd from None to given param
-    # print("Hello World")
-    (n, k) = map(int, input().split(' '))
-    ans = 0
-    ans = sum(1 for i in range(n) if not int(input()) % k)
-    sys.stdout.write("{}".format(ans))
-    # sys.stdout.write(str(ans))
+    try:
+        # n = int(input())
+        n, t = list(map(int, input().split()))
+        # while True:
+        for i in range(1):
+            try:
+                print("Hello World")
+            except Exception as e1:    #end of input file
+                # print("Error_inner: ", e1)
+                break
+    except Exception as e2:
+        # print("ERROR_outer: ", e2)
+        pass
     # os.write(1,"%d"%ans)
+    # sys.stdout.write(str(ans))
     # print("YES" if ans else "NO")
+    # sys.stdout.write("{}".format(ans))
     # pass
 
 def main():
