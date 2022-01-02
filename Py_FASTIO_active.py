@@ -1,6 +1,9 @@
 #!/usr/bin/env python
 
-'''
+'''             
+                -------------
+                # जय श्री गणेश
+                -------------
     Name : cyberkid05 | Country : India
     Language : Python3
     email : thehappymentorkid@gmail.com
@@ -180,10 +183,10 @@ def solve():
     # global modobj
     # print(modobj.value(int(1e15)))  #setting modobj._modd from None to given param
     try:
+        n = 1
         # n = int(input())
-        n, t = list(map(int, input().split()))
         # while True:
-        for i in range(1):
+        for i in range(n):
             try:
                 print("Hello World")
             except Exception as e1:    #end of input file
