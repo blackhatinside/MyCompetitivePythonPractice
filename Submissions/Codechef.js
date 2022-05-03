@@ -43,7 +43,7 @@ for (let tc = 0; tc < tcs; tc++) {
     console.log(arr[0] * arr[1] * arr[2]);
 }
 
-// https://www.codechef.com/problems/SEMCOURSES
+// https://www.codechef.com/problems/BIRDFARM
 let fs = require("fs");
 let data = fs.readFileSync(0, "utf-8");
 let idx = 0;
