@@ -42,3 +42,26 @@ for (let tc = 0; tc < tcs; tc++) {
     let arr = input().split(" ").map(Number);
     console.log(arr[0] * arr[1] * arr[2]);
 }
+
+// https://www.codechef.com/problems/SEMCOURSES
+let fs = require("fs");
+let data = fs.readFileSync(0, "utf-8");
+let idx = 0;
+data = data.split("\n");
+function input() {
+  return data[idx++];
+}
+
+let tcs = parseInt(input());
+for (let tc = 0; tc < tcs; tc++) {
+    let arr = input().split(" ").map(Number);
+    let cx = arr[0], dy = arr[1], z = arr[2];
+    if (z % cx == 0 && z % dy == 0)
+        console.log("ANY")
+    else if (z % cx == 0)
+        console.log("CHICKEN")
+    else if (z % dy == 0)
+        console.log("DUCK")
+    else
+        console.log("NONE")
+}
