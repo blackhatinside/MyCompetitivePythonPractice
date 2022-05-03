@@ -12,3 +12,18 @@ for (let tc = 0; tc < tcs; tc++) {
     let xy = input().split(" ");
     console.log((xy[0] > xy[1] ? "A" : "B"));
 }
+
+// https://www.codechef.com/problems/PRESENTS
+let fs = require("fs");
+let data = fs.readFileSync(0, "utf-8");
+let idx = 0;
+data = data.split("\n");
+function input() {
+  return data[idx++];
+}
+
+let tcs = parseInt(input());
+for (let tc = 0; tc < tcs; tc++) {
+    let n = parseInt(input());
+    console.log(~~(n / 5) * 4 + (n % 5));
+}
