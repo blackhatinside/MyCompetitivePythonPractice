@@ -1,5 +1,5 @@
 // https://www.codechef.com/problems/TALLER
-let fs = require("fs");
+let fs = require("fs");     // Node.js File System Module
 let data = fs.readFileSync(0, "utf-8");
 let idx = 0;
 data = data.split("\n");
@@ -25,5 +25,5 @@ function input() {
 let tcs = parseInt(input());
 for (let tc = 0; tc < tcs; tc++) {
     let n = parseInt(input());
-    console.log(~~(n / 5) * 4 + (n % 5));
+    console.log(~~(n / 5) * 4 + (n % 5));   // ~~ used for Floor Division
 }
