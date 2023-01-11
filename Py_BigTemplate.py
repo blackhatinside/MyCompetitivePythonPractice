@@ -5,7 +5,7 @@
 //////////////////////////////////////////////////
 //                                              //
 //                                              //
-//          C++ Competitive Programming         //
+//          Python Competitive Programming      //
 //              Template by Cyberkid            //
 //                                              //
 //            Meet my Codechef Doggie           //
